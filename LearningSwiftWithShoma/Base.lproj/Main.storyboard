@@ -20,6 +20,9 @@
                                 <rect key="frame" x="41" y="62" width="293" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="actionTF:" destination="BYZ-38-t0r" eventType="editingChanged" id="s1N-gf-Kt4"/>
+                                </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BDQ-BA-DJI">
                                 <rect key="frame" x="41" y="126" width="293" height="20.5"/>
@@ -41,6 +44,10 @@
                             <constraint firstItem="spd-gP-Nyq" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="62" id="ylQ-fR-Bwo"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="label" destination="BDQ-BA-DJI" id="KsK-Tk-RUC"/>
+                        <outlet property="textField" destination="spd-gP-Nyq" id="BJ4-Wg-bxB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
